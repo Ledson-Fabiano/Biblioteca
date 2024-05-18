@@ -1,0 +1,502 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="Biblioteca/img/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="Biblioteca/img/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="Biblioteca/img/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="Biblioteca/img/favicon/manifest.json">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+        >
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap-icons/font/bootstrap-icons.css"
+            integrity="sha384-wiXzqABVhZNleAJvLecSJ6QI4u5W2Ic9K1dmin4mPTJ6Fkl65d5Gvlt4sPm7qe3k"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Biblioteca Online :: Página Principal</title>
+    </head>
+    <body>
+        <div class="d-flex flex-column wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <b>Biblioteca Online</b>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <form class="ml-auto mr-2 mt-2 d-flex">
+                            <input
+                                class="form-control"
+                                type="search"
+                                placeholder="Digitar..."
+                                aria-label="Search"
+                            >
+                            <button class="btn btn-outline-light" type="submit">Pesquisa</button>
+                        </form>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/index.html">Principal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/contato.html">Contato</a>
+                                </li>
+                            </ul>
+                            <div class="align-self-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="/Cadastro.html" class=" nav-link active ">Quero Me Cadastrar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/Login.html" class=" nav-link active ">Entra</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span class="badge rounded-pill bg-dark text-active position-absolute ml-4 mt-0" title="0 Produto(s) no carrinho">
+                                            <small>0</small>
+                                        </span>
+                                        <a href="/Carrinho.html" class=" nav-link active">
+                                            <i class="bi bi-cart" style="font-size:24px;line-height: 24px;"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img class="d-block mx-auto w-5" src="/Biblioteca/img/slides/NOVOSLIDE.jpg" alt="">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block mx-auto w-5" src="/Biblioteca/img/slides/Design sem nome (1).jpg" alt="">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img class="d-block mx-auto w-5" src="/Biblioteca/img/slides/“EM UMA BIBLIOTECA SÃO SOLITARIOS AQUELES QUE NAO SABEM LER”.jpg" alt="">
+                            </div>
+                        </div>
+                        <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visual-hidden">Anterior</span>
+                        </a>
+                        <a
+                            class="carousel-control-next"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visual-hidden">Próximo</span>
+                        </a>
+                    </div>
+                    <hr class="mt-3">
+                </div>
+                <main class="flex-fill">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control" placeholder="Digite aqui o que Procura">
+                                        <button class="btn btn-danger">Buscar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                                    <form class="d-inline-block">
+                                        <div class="form-group">
+                                            <select class="form-select form-select-sm">
+                                                <option value="">Selecione uma opção</option>
+                                                <option value="nome">Ordena pelo nome</option>
+                                                <option value="preco-asc">Ordena pelo menor preço</option>
+                                                <option value="preco-desc">Ordena pelo maior preço</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                    <nav class="d-inline-block me-3">
+                                        <ul class="pagination pagination-sm my-0">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">4</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">5</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">6</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <hr mt-3>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Isenção PCD.jpeg" class="card-img-top" alt="Isenção PCD">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 4,50</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Isenção PCD</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Este livro traz informações de como EU CONSEGUI as isenções de IPI, ICMS e IPVA na compra de um carro novo no Estado de São Paulo, SOZINHO, sem a ajuda de terceiros e SEM BUROCRACIA. Eu sou condutor não profissional e de acordo com a legislação sou condutor PcD. Se você se identificou com a minha história, este livro pode esclarecer suas dúvidas de como conduzir o processo de isenções.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">50 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Desobedeça.jpeg" class="card-img-top" alt="DESOBEDEÇA">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 17,99</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Desobedeça</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">"A sua autenticidade engaja mais do que qualquer outra coisa. Jamais a troque por uma tentativa de aprovação." - Mauricio Benvenutti</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">45 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Incansáveis.jpeg" class="card-img-top" alt="INCANSÁVEIS">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 20,00</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Incansáveis</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">A sua autenticidade engaja mais do que qualquer outra coisa. Jamais a troque por uma tentativa de aprovação." - Mauricio Benvenutti Se você não sente frio na barriga, então a sua vida é conveniente.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-light disabled mt-2">
+                                            <small>Reabastecendo Estoque</small>
+                                        </a>
+                                        <small class="text-danger d-block mt-2">Produto esgotado</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Encore desta noite.jpeg" class="card-img-top" alt="ENCORE DESTA NOITE">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 27,50</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Encore Desta Noite</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Zac já foi Bobby, antes de deixar seu antigo nome e sua antiga paixão para chegar ao topo das paradas. Uma década depois, expulso de sua banda, a antiga celebridade se vê rastejando sozinho para casa com o rabo entre as pernas.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">150 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Invente alguma coisa.jpeg" class="card-img-top" alt="INVENTE ALGUMA COISA">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 22,99</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Invente Alguma Coisa</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Em Invente alguma coisa, o autor best-seller Chuck Palahniuk retorna ao universo de Clube da luta no conto "Expedição", onde os fãs vão delirar ao reencontrar Tyler Durden numa prévia ao aclamado romance que ganhou adaptação para o cinema e conquistou milhões de pessoas em todo o mundo.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">25 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Poesia na varanda.jpeg" class="card-img-top" alt="POESIA NA VARANDA">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 32,99</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Poesia na Varanda</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">De repente, a poesia toma conta de nós: brota, passa, entra, grita, brilha... e vai embora. Para onde? Será que ela volta? Quando? E por onde vai passar? Créditos do vídeo: "Leitor" .</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">255 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Jornalismo Em Braille.jpeg" class="card-img-top" alt="JORNALISMO EM BRAILLE">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 70,00</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jornalismo em Braille</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Este livro com teor científico, buscou identificar o interesse e a aceitação de um veículo de comunicação social impresso em braille dos deficientes visuais no município de Sinop-MT. .</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">7 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Histórias de cego.jpeg" class="card-img-top" alt="HISTÓRIA DE CEGO">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 2,99</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">História de cego</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Uma coletânea das melhores crônicas publicadas no projeto Histórias de cego, inicialmente um blog e depois um canal de youtube onde muito além de contar um pouco da sua vivência em uma sociedade tão visual, Marcos Lima nos mostra o mundo por seus olhos.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">66 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Audiolivros para o sucesso.jpeg" class="card-img-top" alt="AUDIOLIVROS PARA O SUCESSO">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 119,99</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Audiolivros para o Sucesso</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Valioso guia para autores, editores de audiolivros, narradores, dubladores e ouvintes de audiolivros. Aprenda como criar, produzir, publicar e comercializar seus audiolivros.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">79 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/Audiolivros para jovens.jpeg" class="card-img-top" alt="AUDIOLIVROS PARA JOVENS">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 4,99</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Audiolivros para Jovens</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Os audiolivros são hoje um produto básico na maioria das bibliotecas públicas e escolares, e com razão, uma vez que têm um papel claro na educação da geração “nascida digital” de hoje.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">50 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/No Mundo da Lua.jpeg" class="card-img-top" alt="NO MUNDO DA LUA">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 48.55</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">No Mundo da Lua</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">De repente, você percebe que há algo de errado com aquela pessoa de quem você tanto gosta, ou até mesmo se dá conta de que pode haver algo errado com você .</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">50 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                             <div class="card text-center bg-light position-relative h-100 d-flex">
+                                    <a href="#" class="position-absolute top-0 end-0  p-2 text-danger">
+                                        <i class="bi bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                    </a>
+                                    <img src="/Biblioteca/img/Livros/TDAH – Da teoria à prática.jpeg" class="card-img-top" alt="TDAH - DA TEORIA Á PRÁTICA">
+                                    <div class="card-header">
+                                        <span class="badge bg-danger">R$ 9,00</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">TDAH - Da Teoria á Prática</h5>
+                                        <div class="collapse"></div>
+                                        <p class="card-text truncar-3l">Este livro é um Manual prático de estratégias para o Transtorno de Hiperatividade e Deficit de Atenção – TDA-H. Traz informações atuais e novidades sobre o diagnóstico, o tratamento, as informações, a aprendizagem e os relatos de pessoas que têm e convivem com o transtorno.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="Carrinho.html" class="btn btn-danger mt-2">Adicionar ao Carrinho</a>
+                                        <small class="text-success d-block mt-2">50 UNIDADES EM ESTOQUE</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-3">
+                        <div class="col-12">
+                            <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                                <form class="d-inline-block">
+                                    <div class="form-group">
+                                        <select class="form-select form-select-sm">
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="nome">Ordena pelo nome</option>
+                                            <option value="preco-asc">Ordena pelo menor preço</option>
+                                            <option value="preco-desc">Ordena pelo maior preço</option>
+                                        </select>
+                                    </div>
+                                </form>
+                                <nav class="d-inline-block me-3">
+                                    <ul class="pagination pagination-sm my-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">6</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="border-top  text-muted bg-light">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col-12 col-md-4 text-center">
+                            ©, 2024 - Biblioteca Online LTDA ME
+                            <br>
+                            RUA Virtual Inexistente,198, COMPUTADOR/PC
+                            <br>
+                            CNPJ 00.000.000/0000-00
+                        </div>
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="/Politica de Privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
+                            <br>
+                            <a href="/Termos.html" class="text-decoration-none text-dark">Termo de Uso</a>
+                            <br>
+                            <a href="/QuemSomos.html" class="text-decoration-none text-dark">Quem Somos</a>
+                            <br>
+                            <a href="TrocaseDevoluções.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                            <br>
+                        </div>
+                        <div class="col-12 col-md-4 text-center">
+                            <a href="/Contato.html" class="text-decoration-none text-dark ">Contato Pelo Site</a>
+                            <br>
+                            E-MAIL:
+                            <a href="mailto:BibliotecaOnline@gmail.com" class="text-decoration-none text-dark">BibliotecaOnline@gmail.com</a>
+                            <br>
+                            Telefone:
+                            <a href="tel:+5581999999999" class="text-decoration-none text-dark">(81) 9 9999-9999</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoO/ufreqqF6MVu4JdG7PhIxZlW8sSJv43gkdSHlua9DmM/" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-V7E1UfZOJ2GqTczW8R9yvGYsU6J1qV5nJ3jR1plTq/1fOgYj4Jp/JxzsmF4pN+Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    </body>
+</html>

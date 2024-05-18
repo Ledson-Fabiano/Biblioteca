@@ -1,0 +1,186 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="Biblioteca/img/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="Biblioteca/img/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="Biblioteca/img/favicon/favicon-16x16.png"
+        >
+        <link rel="manifest" href="Biblioteca/img/favicon/manifest.json">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+        >
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap-icons/font/bootstrap-icons.css"
+            integrity="sha384-wiXzqABVhZNleAJvLecSJ6QI4u5W2Ic9K1dmin4mPTJ6Fkl65d5Gvlt4sPm7qe3k"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Biblioteca Online :: Perfil cliente:: Endereço</title>
+    </head>
+    <body>
+        <div class="d-flex flex-column wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <b>Biblioteca Online</b>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <form class="ml-auto mr-2 mt-2 d-flex">
+                            <input
+                                class="form-control"
+                                type="search"
+                                placeholder="Digitar..."
+                                aria-label="Search"
+                            >
+                            <button class="btn btn-outline-light" type="submit">Pesquisa</button>
+                        </form>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/index.html">Principal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/contato.html">Contato</a>
+                                </li>
+                            </ul>
+                            <div class="align-self-end">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="/Cliente.html" class=" nav-link active ">Quero Me Cadastrar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/Login.html" class=" nav-link active ">sair</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span class="badge rounded-pill bg-dark text-active position-absolute ml-4 mt-0" title="0 Produto(s) no carrinho">
+                                            <small>0</small>
+                                        </span>
+                                        <a href="/Carrinho.html" class=" nav-link active">
+                                            <i class="bi bi-cart" style="font-size:24px;line-height: 24px;"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <main class="flex-fill">
+                    <div class="container ">
+                        <h1>MINHA CONTA</h1>
+                        <div class="row gx-3">
+                            <div class="col-4">
+                                <div class="list-group">
+                                    <a href="/Cliente_dados.html" class="list-group-item list-group-item-action ">
+                                        <i class="bi-person fs-6"></i>Dado Pessoais
+                                    </a>
+                                    <a href="/Cliente_Contato.html" class="list-group-item list-group-item-action ">
+                                        <i class="bi-mailbox fs-6"></i>Contatos
+                                    </a>
+                                    <a href="/Cliente_Endereco.html" class="list-group-item list-group-item-action bg-danger text-light ">
+                                        <i class="bi-house-door fs-6"></i>Endereço
+                                    </a>
+                                    <a href="/Cliente_Pedidos.html" class="list-group-item list-group-item-action ">
+                                        <i class="bi-truck fs-6"></i>Pedidos
+                                    </a>
+                                    <a href="/Cliente_Favoritos.html" class="list-group-item list-group-item-action ">
+                                        <i class="bi-heart fs-6"></i>Favoritos
+                                    </a>
+                                    <a href="/Cliente_senha.html" class="list-group-item list-group-item-action ">
+                                        <i class="bi-lock fs-6"></i>Altera Senha
+                                    </a>
+                                    <a href="/index.html" class="list-group-item list-group-item-action ">
+                                        <i class="bi-door-open fs-6"></i>Sair
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-8">
+                               <form action="">
+                                <div class="form-floating mb-3 col-md-6 col-lg-4">
+                                    <input class="form-control" type="text" id="txtCEP" placeholder=" " autofocus/>
+                                    <label for="txtCEP">CEP</label>
+                                </div>
+                                <div class="mb-3 col-md-6 col-lg-8">
+                                    <textarea class="form-control text-muted bg-light" style="height: 58px; font-size: 14px;" disabled>Digite o CEP para buscarmos o Endereço.</textarea>
+                                </div>
+                                <div class="form-floating mb-3 col-md-4">
+                                    <input class="form-control" type="text" id="txtNumero" placeholder=" " autofocus/>
+                                    <label for="txtNumero">Número</label>
+                                </div>
+                                <div class="form-floating mb-3 col-md-8">
+                                    <input class="form-control" type="text" id="txtComplemento" placeholder=" " autofocus/>
+                                    <label for="txtComplemento">Complemento</label>
+                                </div>
+                                <div class="form-floating mb-3 ">
+                                    <input class="form-control" type="text" id="txtReferencia" placeholder=" " autofocus/>
+                                    <label for="txtReferencia">Ponto de Referência</label>
+                                </div>
+                               </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="border-top fixed-bottom text-muted bg-light">
+                    <div class="container">
+                        <div class="row py-3">
+                            <div class="col-12 col-md-4 text-center">
+                                ©, 2024 - Biblioteca Online LTDA ME
+                                <br>
+                                RUA Virtual Inexistente,198, COMPUTADOR/PC
+                                <br>
+                                CNPJ 00.000.000/0000-00
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <a href="/Privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
+                                <br>
+                                <a href="/Termos.html" class="text-decoration-none text-dark">Termo de Uso</a>
+                                <br>
+                                <a href="/QuemSomos.html" class="text-decoration-none text-dark">Quem Somos</a>
+                                <br>
+                                <a href="TrocaseDevoluções.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                                <br>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <a href="/Contato.html" class="text-decoration-none text-dark ">Contato Pelo Site</a>
+                                <br>
+                                E-MAIL:
+                                <a href="mailto:BibliotecaOnline@gmail.com" class="text-decoration-none text-dark">BibliotecaOnline@gmail.com</a>
+                                <br>
+                                Telefone:
+                                <a href="tel:+5581999999999" class="text-decoration-none text-dark">(81) 9 9999-9999</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoO/ufreqqF6MVu4JdG7PhIxZlW8sSJv43gkdSHlua9DmM/" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-V7E1UfZOJ2GqTczW8R9yvGYsU6J1qV5nJ3jR1plTq/1fOgYj4Jp/JxzsmF4pN+Q" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        </body>
+    </html>

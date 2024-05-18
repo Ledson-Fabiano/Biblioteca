@@ -1,0 +1,28 @@
+body { 
+    min-width: 372px;
+}
+
+wrapeer{
+    min-height: 100vh;
+}
+.row {
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+}
+p.truncar-3l {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 469px) {
+    .element .mt-xs-3 {
+      margin-top: 1rem;
+    }
+  }
+  
