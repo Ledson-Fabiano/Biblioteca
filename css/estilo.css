@@ -25,4 +25,30 @@ p.truncar-3l {
       margin-top: 1rem;
     }
   }
+
+.acessibilidade {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .btn-acessibilidade {
+    background-color: #005bac;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-acessibilidade img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .btn-acessibilidade:hover {
+    background-color: #003d73;
+    transform: scale(1.1);
+  }
   
